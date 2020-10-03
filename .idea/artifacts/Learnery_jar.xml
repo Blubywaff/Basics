@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Learnery:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Learnery_jar</output-path>
+    <root id="archive" name="Learnery.jar">
+      <element id="module-output" name="Learnery" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../server.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../BuildTools.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
