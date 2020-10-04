@@ -21,3 +21,7 @@ commands:
     usage: /<command> [item] [amount]
     permission: op
     aliases: [i]
+  heal:
+    description: heals player
+    usage: /<command>
+    permission: op

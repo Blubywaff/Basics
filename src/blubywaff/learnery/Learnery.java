@@ -9,6 +9,7 @@ public class Learnery extends JavaPlugin {
         this.getCommand("god").setExecutor(new CommandGod());
         this.getCommand("speed").setExecutor(new CommandSpeed());
         this.getCommand("item").setExecutor(new CommandItem());
+        this.getCommand("heal").setExecutor(new CommandHeal());
     }
 
     @Override
