@@ -12,3 +12,12 @@ commands:
     description: prevents damage
     usage: /<command>
     permission: op
+  speed:
+    description: changes your speed
+    usage: /<command> [speed]
+    permission: op
+  item:
+    description: gives items
+    usage: /<command> [item] [amount]
+    permission: op
+    aliases: [i]

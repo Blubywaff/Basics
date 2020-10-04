@@ -7,6 +7,8 @@ public class Learnery extends JavaPlugin {
     public void onEnable() {
         this.getCommand("fly").setExecutor(new CommandFly());
         this.getCommand("god").setExecutor(new CommandGod());
+        this.getCommand("speed").setExecutor(new CommandSpeed());
+        this.getCommand("item").setExecutor(new CommandItem());
     }
 
     @Override

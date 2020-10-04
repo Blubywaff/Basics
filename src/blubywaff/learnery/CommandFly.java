@@ -10,7 +10,9 @@ public class CommandFly implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if(sender instanceof Player) {
             Player player = (Player) sender;
-            player.setAllowFlight(!player.getAllowFlight());
+            boolean fly = !player.getAllowFlight();
+            player.setAllowFlight(fly);
+            sender.sendMessage("Fly " + (fly?"enabled":"disabled"));
             return true;
         }
         return false;

@@ -10,13 +10,9 @@ public class CommandGod implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if(sender instanceof Player) {
             Player player = (Player) sender;
-            if(player.getNoDamageTicks() < 10) {
-                player.setNoDamageTicks(Integer.MAX_VALUE);
-                sender.sendMessage("God mode enabled");
-            } else {
-                player.setNoDamageTicks(0);
-                sender.sendMessage("God mode disabled");
-            }
+            boolean isGod = player.getNoDamageTicks() > 100;
+            player.setNoDamageTicks(isGod?0:Integer.MAX_VALUE);
+            sender.sendMessage("God mode " + (isGod?"disabled":"enabled"));
             return true;
         }
         return false;
